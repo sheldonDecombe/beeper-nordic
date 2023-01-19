@@ -699,6 +699,29 @@ It is heavily inspired by the Nordic GTK theme from @EliverLara (https://github.
         }
 
 
+    /** File upload bar **/
+
+        /*** Progress bar - Empty color ***/
+        progress.mx_ProgressBar {
+            background-color: var(--nord-bg-light);
+        }
+
+        /*** Progress bar - Progress color ***/
+        progress.mx_ProgressBar::-webkit-progress-value {
+            background-color: var(--nord-accent-1);
+        }
+
+        /*** Progress bar - Padding ***/
+        .mx_UploadBar {
+            padding-bottom: 10px;
+        }
+
+        /*** Upload bar - Cancel button ***/
+        .mx_UploadBar_cancel {
+            background-color: var(--nord-alert);
+        }
+
+
     /** All messages **/
 
         /*** Messages options ***/
