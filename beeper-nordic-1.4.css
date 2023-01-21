@@ -262,6 +262,16 @@ It is heavily inspired by the Nordic GTK theme from @EliverLara (https://github.
             background-color: var(--nord-accent-2);
         }
 
+        /*** Mention colored dot indicator ***/
+        .bp_RoomTile .indicator.mention {
+            background-color: var(--nord12);
+        }
+        
+        /*** Invite colored dot indicator ***/
+        .bp_RoomTile .indicator.invite {
+            background-color: var(--nord-accent-3);
+        }
+
         /*** Active conversation highlight ***/
         .bp_new-conversation-view .bp_RoomTile:not(.small).active .outline.electronTransparency, .bp_new-conversation-view .bp_RoomTile:not(.small).active .outline, .bp_new-conversation-view .bp_RoomTile:not(.small).active .row.info {
             background-color: var(--nord-bg-light) !important;
