@@ -462,7 +462,7 @@ It is heavily inspired by the Nordic GTK theme from @EliverLara (https://github.
             border: 1px solid var(--nord-grey);
         }
 
-        /*** Seacg box hint ***/
+        /*** Search box hint ***/
         .mx_SearchBar .mx_SearchBar_input ::placeholder {
             color: var(--nord-grey);
         }
@@ -848,18 +848,23 @@ It is heavily inspired by the Nordic GTK theme from @EliverLara (https://github.
             background: var(--nord-bg-light);
             color: var(--nord-text-main);
         }
-        .mx_EventTile_messageIn .mx_EventTile_line--colourful { /* Not sure what the difference is between reglar and --colourful */
+        .mx_EventTile_messageIn .mx_EventTile_line--colourful { /* Not sure what the difference is between regular and --colourful */
             background: var(--nord-bg-light);
             color: var(--nord-text-main);
         }
 
-        /*** Chat bubble for images ***/
+        /*** Chat bubble for images - Sender's name ***/
         .mx_EventTile_messageIn.mx_EventTile_image .mx_EventTile_line {
             background-color: var(--nord-bg-light);    
             color: var(--nord-text-main);
         }
 
-        /*** Chat bubble for GIF & videos ***/
+        /*** Chat bubble for images - Image background ***/
+        .mx_EventTile_message .mx_EventTile_line .mx_MImageBody {
+            background-color: transparent;  
+        }
+
+        /*** Chat bubble for GIF & videos - Sender's name ***/
         .mx_EventTile_messageIn.mx_EventTile_video .mx_EventTile_line {
             background-color: #2e3647;
             /* 
@@ -867,6 +872,12 @@ It is heavily inspired by the Nordic GTK theme from @EliverLara (https://github.
             */
             color: var(--nord-text-main);
         }
+
+        /*** Chat bubble for GIF & videos - Image background ***/
+        .mx_EventTile_messageIn .mx_EventTile_line .mx_MVideoBody {
+            background-color: var(--nord-bg-light);  
+        }
+
 
         /*** Reaction row + image caption ***/
         .mx_EventTile--colourful.mx_EventTile_messageIn .mx_ReactionsRowButton, .mx_EventTile--colourful.mx_EventTile_messageIn .mx_ReactionsRow_addReaction, .mx_EventTile--colourful.mx_EventTile_messageIn .mx_MImageBody-container .mx_EventTile_reactionsContainer, .mx_EventTile--colourful.mx_EventTile_messageIn.mx_EventTile_video .mx_EventTile_reactionsContainer, .mx_EventTile--colourful.mx_EventTile_messageIn .mx_MImageBody-container .mx_SenderInfo_wrapper, .mx_EventTile--colourful.mx_EventTile_messageIn.mx_EventTile_video .mx_EventTile_line:not(.mx_EventTile_line--caption) .mx_SenderInfo_wrapper {
