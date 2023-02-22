@@ -958,6 +958,7 @@ It is heavily inspired by the Nordic GTK theme from @EliverLara (https://github.
             */
             /* It is not useful to separate hover / link from active / visited for now since active is not implemented but it might be this is for futureproofing */
 
+
     /** Jump to bottom button **/
 
         /*** Button ***/
@@ -974,6 +975,12 @@ It is heavily inspired by the Nordic GTK theme from @EliverLara (https://github.
         /*** Arrow ***/
         .mx_JumpToBottomButton .mx_JumpToBottomButton_scrollDown::before {
             background: var(--nord-text-dark);
+        }
+
+        /*** Jump to new messages ***/ 
+        .mx_AccessibleButton.mx_JumpToBottomButton_scrollDown {
+            background-color: var(--nord-accent-1);
+            color: var(--nord-text-main);
         }
 
 
